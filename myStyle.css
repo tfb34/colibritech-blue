@@ -488,6 +488,7 @@ body{
 }
 .service-box{
   color: #3B3D4B;
+  border-radius:5px;
   width: 245px;
   background-color: white;
   box-shadow: 5px 8px 50px 5px rgba(1,1,1,0.1);
@@ -519,10 +520,11 @@ body{
 #overview h2{
   margin-top:0;
   margin-bottom:2em;
+  color:white;
 }
 #overview p{
   margin-bottom:2.5em;
-  color: rgba(1,1,1,0.5);
+  color: whitesmoke;;
   font-weight: 600;
 }
 #overview img{
@@ -534,7 +536,7 @@ body{
   font-size: 14px;
   padding:0.5em 1em;
   font-weight: bold;
-  border:3px solid var(--main-color);
+  border:3px solid white;
   color:var(--main-color);
 }
 #find-us{
@@ -842,8 +844,8 @@ input[type="submit"]{
   padding-left:13vw;
 }
 .service-intro h1 > img{
-  height:46px;
-  width:46px;
+  height:40px;
+  width:40px;
   vertical-align: middle;
   padding-left:0.5em;
 }
