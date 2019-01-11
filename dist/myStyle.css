@@ -347,6 +347,7 @@ template {
   --main-gradient: linear-gradient(136.69deg, #5855FF 1.92%, #8C47FE 69.76%);
   --main-color: rgba(88, 85, 255, 0.8);
   --dark-color: rgb(59,61,75);
+  --bold-color: #FF5C45;
   --btn-color: #007AFF;
   --network-support-color: #91CCF6;
   --computer-repair-color: #009d85;
@@ -373,7 +374,7 @@ body{
   color:white;
   margin:0;
   padding-bottom:1em;
-  padding-top:45%;
+  /*padding-top:45%;*/
   animation-name: moveUp;
   animation-duration: 0.8s;
   animation-fill-mode:both;
@@ -427,6 +428,15 @@ body{
   bottom:0;
   right:-80%;
   height:100%
+}
+#welcome #content{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 256px;
+  margin: auto;
 }
 /* Mobile menu */
 
@@ -523,8 +533,6 @@ body{
   text-decoration: none;
   font-size: 14px;
   padding:0.5em 1em;
-  /*border:3px solid var(--dark-color);
-  color:var(--dark-color);*/
   font-weight: bold;
   border:3px solid var(--main-color);
   color:var(--main-color);
@@ -602,10 +610,11 @@ ul li{
   margin-top: 6em;
 }
 #mobile-menu .current{
-  background-image: var(--main-gradient);
+  /*background-image: var(--main-gradient);*/
+  background-color: var(--bold-color);
 }
 #mobile-menu ul > li:last-child > a{
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--bold-color);
   padding-bottom:5px;
 }
 #black-underline{
@@ -808,7 +817,7 @@ textarea{
 
 input[type="submit"]{
   /*background-image:var(--main-gradient);*/
-  background-color: #FF5C45;
+  background-color: var(--bold-color);
   color:white;
   font-weight: bold;
   border:0px;
@@ -918,7 +927,7 @@ input[type="submit"]{
   font-size:14px;
 }
 .highlight{
-  color:var(--main-color) !important;
+  color:var(--bold-color) !important;
 }
 .content-pic{
   width:145px;
@@ -1102,6 +1111,15 @@ input[type="submit"]{
 *
 */
 
+@media only screen and (min-width: 425px){
+  #welcome img {
+    /* width: 100%; */
+    position: absolute;
+    bottom: 0;
+    right: -50%;
+    height: 100%;
+  }
+}
 @media only screen and (min-width: 768px){
   /*index page*/
   #welcome{
@@ -1117,8 +1135,6 @@ input[type="submit"]{
   #welcome h1{
     margin-left:45px;
     width:420px;
-    /*margin-top:30vh;*/
-    padding-top:30vh;
   }
   #welcome #service-options-svg{
     display:inline-flex;
@@ -1332,11 +1348,11 @@ input[type="submit"]{
     position: absolute;
     bottom: 0;
     right: 0;
-    border-color: var(--main-color);
-    color: var(--main-color);
+    border-color: var(--bold-color);
+    color: var(--bold-color);
   }
   .text-wrapper-right .button:hover{
-    background-color: var(--main-color);
+    background-color: var(--bold-color);
     color:white;
   }
   #overview{
@@ -1791,9 +1807,6 @@ input[type="submit"]{
   }
   #welcome #service-options-svg{
     margin-left:23%;
-  }
-  #welcome h1{
-    padding-top: 15%;
   }
   #welcome img {
     right: 15vw;
