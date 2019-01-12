@@ -1112,7 +1112,9 @@ input[type="submit"]{
 * TABLET 
 *
 */
-
+#special-btn{
+  visibility: hidden;
+}
 @media only screen and (min-width: 425px){
   #welcome img {
     /* width: 100%; */
@@ -1542,6 +1544,9 @@ input[type="submit"]{
   }
 }
 @media only screen and (min-width: 1200px){
+    #special-btn{
+      visibility: visible;
+    }
     #welcome img{
       right:0;
     }
