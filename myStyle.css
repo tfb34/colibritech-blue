@@ -869,7 +869,7 @@ input[type="submit"]{
 .service-intro p{
   text-align: left;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   width:270px;
   color: #E5E5E5;
 }
