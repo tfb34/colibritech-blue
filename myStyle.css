@@ -360,6 +360,15 @@ body{
   color:var(--dark-color);
   font-family: 'Open Sans', sans-serif;
 }
+#logo{
+  left: 1em;
+  position: absolute;
+  z-index: 10;
+  top: 1em;
+}
+#logo img{
+  height:50px;
+}
 #welcome{
   position: relative;
   width:100%;
@@ -444,7 +453,7 @@ body{
   width:28px;
   cursor:pointer;
   position: fixed;
-  top:0;
+  top:0.8em;
   right:0;
   z-index:1000;
   margin:1em;
