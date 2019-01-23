@@ -367,7 +367,7 @@ body{
   top: 1em;
 }
 #logo img{
-  height:50px;
+  height:40px;
 }
 #welcome{
   position: relative;
@@ -397,7 +397,9 @@ body{
   position: relative;
   width:90px;
   color:white;
-  background-color: var(--dark-color);
+  /*background-color: var(--dark-color);*/
+  background-color: mediumvioletred;
+
   border-radius:5px;
   padding:0.8em 1em;
   font-size:16px;
