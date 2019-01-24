@@ -864,7 +864,7 @@ input[type="submit"]{
   text-align: left;
   margin:0;
  /* padding-top:18vh;*/
- padding-top:90px;
+ padding-top:110px;
 }
 .service-intro p{
   text-align: left;
@@ -1126,6 +1126,9 @@ input[type="submit"]{
 #special-btn{
   visibility: hidden;
 }
+.subpage-content-padding{
+  padding-top:1em;
+}
 @media only screen and (min-width: 425px){
   #welcome img {
     /* width: 100%; */
@@ -1235,6 +1238,10 @@ input[type="submit"]{
 
 }
 @media only screen and (min-width: 1024px){
+  #logo{
+    left: 5vw;
+    top: 1.3em;
+  }
   h1{
     font-size:48px;
   }
