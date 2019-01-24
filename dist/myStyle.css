@@ -360,6 +360,15 @@ body{
   color:var(--dark-color);
   font-family: 'Open Sans', sans-serif;
 }
+#logo{
+  left: 1em;
+  position: absolute;
+  z-index: 10;
+  top: 1em;
+}
+#logo img{
+  height:40px;
+}
 #welcome{
   position: relative;
   width:100%;
@@ -388,7 +397,9 @@ body{
   position: relative;
   width:90px;
   color:white;
-  background-color: var(--dark-color);
+  /*background-color: var(--dark-color);*/
+  background-color: mediumvioletred;
+
   border-radius:5px;
   padding:0.8em 1em;
   font-size:16px;
@@ -444,7 +455,7 @@ body{
   width:28px;
   cursor:pointer;
   position: fixed;
-  top:0;
+  top:0.5em;
   right:0;
   z-index:1000;
   margin:1em;
@@ -853,12 +864,12 @@ input[type="submit"]{
   text-align: left;
   margin:0;
  /* padding-top:18vh;*/
- padding-top:90px;
+ padding-top:110px;
 }
 .service-intro p{
   text-align: left;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
   width:270px;
   color: #E5E5E5;
 }
@@ -1115,6 +1126,9 @@ input[type="submit"]{
 #special-btn{
   visibility: hidden;
 }
+.subpage-content-padding{
+  padding-top:1em;
+}
 @media only screen and (min-width: 425px){
   #welcome img {
     /* width: 100%; */
@@ -1224,6 +1238,10 @@ input[type="submit"]{
 
 }
 @media only screen and (min-width: 1024px){
+  #logo{
+    left: 5vw;
+    top: 1.3em;
+  }
   h1{
     font-size:48px;
   }
