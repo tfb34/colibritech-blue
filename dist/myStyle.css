@@ -524,6 +524,15 @@ body{
   background-color:rgb(98,215,244);
   color:white;
 }
+.about-text{
+  font-weight: bold;max-width: 600px;margin:0 auto;line-height: 28px;
+  padding-bottom: 1em;
+  font-size: 18px;
+}
+#services-link:hover{
+  color:white !important;
+}
+
 #overview{
   background-color:white;
   text-align: center;
@@ -1306,7 +1315,7 @@ input[type="submit"]{
     z-index:100;
   }
   #navbar > ul a:hover{
-    color:var(--dark-color);
+    color: #edecea;
   }
   #navbar > ul li:last-of-type a{
       border-bottom:2px solid white;
@@ -1416,13 +1425,10 @@ input[type="submit"]{
   .service-intro h1{
     font-size: 42px;
   }
-  #navbar.service-page > ul a:hover{
+ /* #navbar.service-page > ul a:hover{
     color:white;
     text-decoration-line: underline;
     text-underline-position: under;
-  }
- /* .service-page .dropdown-content ul{
-    background-image: var(--main-gradient);
   }*/
   #navbar.service-page .dropdown-content li a:hover{
     color:white !important;
