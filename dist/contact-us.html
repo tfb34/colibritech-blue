@@ -80,7 +80,7 @@
 	<section id="form" class="padding">
 		<h3>Or fill out this form,<br> and we'll get back to you.</h3>
 		<img src="assets/gradient-line.svg" id="line">
-		<form action="#">
+		<form method=post action="https://p9.secure.webhosting.luminate.com/forms?ssc=us2&login=ebritosanchez_1">
 			<div class="row">
 				<div class="col-xs-12 col-lg-6">
 					<p>First Name</p><br>
@@ -98,7 +98,7 @@
 				</div>
 				<div class="col-xs-12 col-lg-6">
 					<p>Phone Number</p><br>
-					<input type="tel" name="phonenumber" placeholder="Phone Number">
+					<input type="tel" name="phonenumber" placeholder="Phone Number" required>
 				</div>
 			</div>
 			<div class="row">
@@ -111,11 +111,12 @@
 						<option value="voiceAndData">Voice &amp; Data</option>
 					</select>
 					<p>Message</p><br>
-					<textarea  name="message" placeholder="Type your message..."></textarea>
+					<textarea  name="message" placeholder="How can we help you?" required></textarea>
 
 					<input type="submit" value="Submit">
 				</div>
 			</div>
+			<input type="hidden" name="next_url" value="http://colibritechs.com/contact-us.html?msg=form_submitted">
 		</form>
 	</section>
 </div>
@@ -131,5 +132,8 @@
 		<p>&copy;2018.All rights reserved.</p>
 	</footer>
 	<script type="text/javascript" src="bundle.js"></script>
+	<script>
+		isFormSent();
+	</script>
 </body>
 </html>

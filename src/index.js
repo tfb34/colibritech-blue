@@ -4,7 +4,13 @@ window.onbeforeunload = function (){
 	}
 }
 
-
+function isFormSent(){
+	var url = new URL(window.location.href);
+	var msg = url.searchParams.get("msg");
+	if(msg=="form_submitted"){
+		alert("Your form has been submitted! Thank you.");
+	}
+}
 // Adds an click listener to certain elements in index page.
 const serviceBoxes = document.getElementsByClassName('service-box');
 const serviceBoxLinks = ['network-support.html', 'web-design.html', 'computer-repair.html', 'voice-and-data.html'];
@@ -115,3 +121,4 @@ window.toggle = toggle;
 window.fadeUp = fadeUp;
 window.mouseOver = mouseOver;
 window.mouseOut = mouseOut;
+window.isFormSent = isFormSent;
