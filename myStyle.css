@@ -603,7 +603,9 @@ footer img{
 footer #logo-name{
   display: block;
   width:100%;
-  margin:1em 0;
+  margin: 1em auto;
+  height: 18px;
+  width: 92px;
 }
 footer p{
   color:white;
