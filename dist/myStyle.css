@@ -935,13 +935,15 @@ input[type="submit"]{
   margin-top:0;
 }
 #mobile-menu button{
-    float: right;
+ /*   float: right;*/
     border: 0;
     background-color: white;
     color: black;
     font-weight: bold;
-    padding:2px 8px 2px 8px;
+    /*padding:2px 8px 2px 8px;*/
     vertical-align: middle;
+    font-size:13px;
+    margin-left: 0.5em;
 }
 .sub-links{
   padding-left: 3em;
