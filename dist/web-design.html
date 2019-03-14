@@ -3,12 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>colibritech</title>
+	<title>Colibritech - Web Design</title>
 	<link rel="stylesheet" type="text/css" href="myStyle.css">
+        <link rel="shortcut icon" href="assets/colibritech-logo.ico" type="favicon/ico" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,600" rel="stylesheet">
 </head>
 <body>
-	<a id="logo" href="index.html"><img src="assets/logo4.svg"></a>
+	<a id="logo" href="index.html"><img src="assets/logo4.png"></a>
 	<div id="menu-btn" onclick="toggleMenu()">
 	  <div class="bar1"></div>
 	  <div class="bar2"></div>
@@ -18,7 +19,7 @@
 		<ul id="list">
 			<li><a href="index.html">Home</a></li>
 			<li class=""><a href="about.html">About</a></li>
-			<li class="current"><button onclick="toggle()">+</button><a href="javascript:void(0)">Services</a></li>
+			<li class="current"><a href="services.html">Services</a><button onclick="toggle()">+</button></li>
 			<li class="sub-links"><a href="network-support.html">Network Support</a></li>
 			<li class="sub-links"><a href="computer-repair.html">Computer Repair</a></li>
 			<li class="sub-links"><a href="web-design.html" class="highlight">Web Design</a></li>
@@ -30,7 +31,7 @@
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
-			<li class="dropdown"><a href="javascript:void(0)">Services</a>
+			<li class="dropdown"><a href="services.html">Services</a>
 				<div class="dropdown-content">
 					<ul>
 						<li><a href="network-support.html">Network Support</a></li>
@@ -62,11 +63,11 @@
 				<p>We design and develop landing pages,
 				corporate web sites, and e-commerce applications.
 				Our testing guarantees you get a fully-functional
-				site in a timely manner.</p>
+				site in a timely manner. View <span class="underline-btn" onclick="scrollToElement('portfolio')">sample work.</span></p>
 			</div>
 			<div class="two-moving-pics">
-				<img src="assets/product-browser.svg" class="back parallax-img animate">
-				<img src="assets/product-mobile.svg" class="front parallax-img animate" style="left: 0">
+				<img src="assets/product-back.png" class="back parallax-img animate">
+				<img src="assets/product-front.png" class="front parallax-img animate" style="left: 0">
 			</div>
 		</div>
 		<svg id="svg" style="transform:translateY(0px);" width="375" height="71" viewBox="0 0 375 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -83,8 +84,8 @@
 				design has been established the development of the site can begin. </p>
 			</div>
 			<div class="two-moving-pics">
-				<img src="assets/product-back2.svg" class="back parallax-img animate" style="left:0">
-				<img src="assets/product-front2.svg" class="front parallax-img animate" style="right: 0">
+				<img src="assets/product-back2.jpg" class="back parallax-img animate" style="left:0">
+				<img src="assets/product-front2.png" class="front parallax-img animate" style="right: 0">
 			</div>
 		</div>
 		<!-- <svg id="svg" width="375" height="71" viewBox="0 0 375 71" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,9 +103,9 @@
 			<div id="two" class="product-info animate">
 				<h2>Pricing</h2>
 				<p class="border">
-				The mimimum price for the web site development is 499 USD, which includes
+				The mimimum price for website development is 499 USD, which includes
 				the web design of one page, responsive front end, and hosting. The price
-				may vary depending on the functionality that you would like to have. 
+				may vary depending on the functionality and additional content that you may need.  
 				</p>
 			</div>
 		</div>
@@ -126,12 +127,12 @@
 	<footer>
 		<a href="index.html">Home</a>
 		<a href="about.html">About</a>
-		<a href="javascript:void(0)" class="bold">Services</a>
+		<a href="services.html" class="bold">Services</a>
 		<a href="contact-us.html">Contact Us</a>
 		<img src="assets/facebook-white.svg">
 		<img src="assets/twitter-white.svg">
 		<img src="assets/linkedIn-white.svg">
-		<img src="assets/colibritech.svg" id="logo-name">
+		<img src="assets/colibritech.png" id="logo-name">
 		<p>&copy;2018.All rights reserved.</p>
 	</footer>
 	<script type="text/javascript" src="bundle.js"></script>

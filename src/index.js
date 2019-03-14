@@ -116,9 +116,15 @@ function isVisible(el){
 window.isVisible = isVisible;
 }
 
+function scrollToElement(id){
+	var el = document.getElementById(id);
+	el.scrollIntoView({behavior: "smooth",block:"start"});
+}
+
 window.toggleMenu = toggleMenu;
 window.toggle = toggle;
 window.fadeUp = fadeUp;
 window.mouseOver = mouseOver;
 window.mouseOut = mouseOut;
 window.isFormSent = isFormSent;
+window.scrollToElement = scrollToElement;

@@ -1128,7 +1128,14 @@ input[type="submit"]{
     animation-fill-mode: both;
     animation-delay: 0.1s;
 }
-
+#services-page .service-box{
+  float: none;
+}
+.underline-btn{
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-position: under;
+}
 /* 
 *
 * TABLET 
